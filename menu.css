@@ -32,6 +32,15 @@ body{
     border-bottom: 1px solid var(--border-grey);
 }
 
+.menu__main__item--active,
+.menu__main__item:hover{
+    background: white;
+    border-bottom: none;
+    border-left: 1px solid #CFCFCF;
+    border-right: 1px solid #CFCFCF;
+    margin: 0 -1px;
+}
+
 .menu__main__item:first-child:hover{
     border-left: none;
     margin-left:0;
@@ -41,13 +50,7 @@ body{
     margin-right:0;
 }
 
-.menu__main__item:hover{
-    background: white;
-    border-bottom: none;
-    border-left: 1px solid #CFCFCF;
-    border-right: 1px solid #CFCFCF;
-    margin: 0 -1px;
-}
+
 
 .menu__main__item--current .menu__main__item__link{
     color:var(--dark-grey);
@@ -71,6 +74,7 @@ body{
 .menu__sub{
     height: 18rem;
     background: white;
+    display: none;
 }
 
 
